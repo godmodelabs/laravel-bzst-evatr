@@ -247,8 +247,7 @@ class Evatr extends AbstractEvatr
 			$me = $v->me;
 			$this->xmlResponse = new EvatrXmlResponse($me['string']);
 		} catch (\Exception $e) {
-    		print_r($this->response->value());
-			throw new \Exception('malformed evatr xml response. possible zope db error.');
+			throw new \Exception('malformed evatr xml response. possible zope db error. ' . $this->response->value());
 		}
     }
 }
