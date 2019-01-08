@@ -24,5 +24,6 @@ return [
     '219' => 'While running a qualified request an error occured. A simple request has been made instead with the following result: The requested VAT ID is valid.',
     '220' => 'When requesting an official confirmation an error occured. No official confirmation will be sent.',
     '221' => 'The requested data does not contain all necessary parameters or an illegal data type. Please check the documentation how to call the interface.',
+	'222' => 'The requested VAT ID is valid. Please be aware of the change to HTTPS (TLS 1.2) at 2019/07/01',
     '999' => 'The request cannot be processed at the moment. Please try later again.',
 ];

@@ -28,5 +28,6 @@ return [
             Die angefragte USt-IdNr. ist gültig.',
     '220' => 'Bei der Anforderung der amtlichen Bestätigungsmitteilung ist ein Fehler aufgetreten. Sie werden kein Schreiben erhalten.',
     '221' => 'Die Anfragedaten enthalten nicht alle notwendigen Parameter oder einen ungültigen Datentyp. Weitere Informationen erhalten Sie bei den Hinweisen zum Schnittstelle - Aufruf.',
+    '222' => 'Die angefragte USt-IdNr. ist gültig. Bitte beachten Sie die Umstellung auf ausschließlich HTTPS (TLS 1.2) zum 07.01.2019.',
     '999' => 'Eine Bearbeitung Ihrer Anfrage ist zurzeit nicht möglich. Bitte versuchen Sie es später noch einmal.',
 ];

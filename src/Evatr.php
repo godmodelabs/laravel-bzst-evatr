@@ -241,6 +241,14 @@ class Evatr extends AbstractEvatr
 
     private function _processResponse()
     {
-        $this->xmlResponse = new EvatrXmlResponse($this->response->value()->me['string']);
+    	try {
+			$r = $this->response;
+			$v = $r->value();
+			$me = $v->me;
+			$this->xmlResponse = new EvatrXmlResponse($me['string']);
+		} catch (\Exception $e) {
+    		print_r($this->response->value());
+			throw new \Exception('malformed evatr xml response. possible zope db error.');
+		}
     }
 }
